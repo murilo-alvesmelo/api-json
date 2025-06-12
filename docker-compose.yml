@@ -1,11 +1,9 @@
 version: "3.8"
+
 services:
-  json-microservice:
+  json-server:
     build: .
     ports:
-      - "8800:8800"
-      - "3002:3002"
+      - "3001:3001"
     volumes:
       - .:/app
-    environment:
-      - NODE_ENV=development

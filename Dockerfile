@@ -1,18 +1,16 @@
-# Usar imagem base do Node.js
 FROM node:18
 
-# Criar diretório de trabalho dentro do container
+# Criar diretório de trabalho
 WORKDIR /app
 
-# Copiar arquivos de dependência e instalar pacotes
-COPY package*.json ./
-RUN npm install
+# Instalar json-server globalmente
+RUN npm install -g json-server
 
-# Copiar o restante da aplicação
-COPY . .
+# Copiar o arquivo db.json para o container
+COPY db.json .
 
-# Expor as portas usadas pela aplicação
-EXPOSE 8800 3002
+# Expor a porta da API
+EXPOSE 3000
 
-# Comando para rodar a aplicação
-CMD ["node", "index.js"]
+# Rodar o json-server na inicialização
+CMD ["json-server", "--watch", "db.json", "--host", "0.0.0.0", "--port", "3001"]

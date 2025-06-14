@@ -1,26 +1,25 @@
-# express json-server
+## Rodando localmente
 
-Backend fake completo com express + JSON-Server
+Clone o projeto
 
-### Sobre - About
+```bash
+  git clone https://github.com/murilo-alvesmelo/api-json.git
+```
 
-Não queira entender a motivação para tal mistura, apenas aproveite caso seja interessante para você também. ;)
+Entre no diretório do projeto
 
-#
+```bash
+  cd api-json
+```
 
-## Dependencias - Dependencies
+Instale as dependências
 
-Para instalar as dependencias execute:
-### `npm install`
+```bash
+  npm install
+```
 
-## Iniciar - Run
+Inicie a aplicação
 
-Para rodar o projeto execute:
-### `npm start`
-
-## Abrir - Open
-Para acessar o projeto rodando acesse os endereços abaixo:
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser JSON-Server
-
-Open [http://localhost:8800](http://localhost:8800) to view it in your browser Express
-
+```bash
+  npm start
+```

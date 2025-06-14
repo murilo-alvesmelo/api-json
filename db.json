@@ -1,99 +1,119 @@
 {
-    "users": {
-      "id": 1,
-      "matricula": "123456",
-      "password": "aluno123"
+  "users": {
+    "id": 1,
+    "matricula": "123456",
+    "password": "aluno123"
+  },
+  "documentCategories": {
+    "available": {
+      "historico": "Histórico Escolar",
+      "boletim": "Boletim",
+      "declaracao": "Declaração",
+      "comunicado": "Comunicado"
     },
-    "documentCategories": {
-      "available": {
-        "historico": "Histórico Escolar",
-        "boletim": "Boletim",
-        "declaracao": "Declaração",
-        "comunicado": "Comunicado"
-      },
-      "upload": {
-        "atestado": "Atestado Médico",
-        "justificativa": "Justificativa de Falta",
-        "requerimento": "Requerimento",
-        "outros": "Outros Documentos"
-      }
-    },
-    "documentStatus": {
-      "ENVIADO": "enviado",
-      "EM_ANALISE": "em_analise",
-      "APROVADO": "aprovado",
-      "REJEITADO": "rejeitado"
-    },
-    "availableDocuments": [
-      {
-        "id": "1",
-        "title": "Histórico Escolar Completo",
-        "type": "pdf",
-        "category": "historico",
-        "url": "./assets/historico_escolar.pdf",
-        "date": "2024-02-15",
-        "size": "2.3 MB",
-        "description": "Histórico escolar completo com todas as disciplinas cursadas.",
-        "pages": 4
-      },
-      {
-        "id": "2",
-        "title": "Boletim 1º Bimestre 2024",
-        "type": "pdf",
-        "category": "boletim",
-        "url": "./assets/boletim_escolar.pdf",
-        "date": "2024-04-10",
-        "size": "856 KB",
-        "description": "Boletim de notas do primeiro bimestre de 2024.",
-        "pages": 2
-      },
-      {
-        "id": "3",
-        "title": "Declaração de Matrícula",
-        "type": "html",
-        "category": "declaracao",
-        "url": "./assets/declaracao_matricula.html",
-        "date": "2024-05-20",
-        "size": "45 KB",
-        "description": "Declaração oficial de matrícula para o ano letivo de 2024."
-      },
-      {
-        "id": "5",
-        "title": "Comunicado - Reunião de Pais",
-        "type": "html",
-        "category": "comunicado",
-        "url": "./assets/comunicado_reuniao.html",
-        "date": "2024-05-25",
-        "size": "32 KB",
-        "description": "Comunicado sobre reunião de pais e mestres."
-      }
-    ],
-    "uploadedDocuments": [
-    ],
-    "statusConfig": {
-      "colors": {
-        "enviado": "#6c757d",
-        "em_analise": "#fd7e14",
-        "aprovado": "#198754",
-        "rejeitado": "#dc3545"
-      },
-      "labels": {
-        "enviado": "Enviado",
-        "em_analise": "Em Análise",
-        "aprovado": "Aprovado",
-        "rejeitado": "Rejeitado"
-      },
-      "icons": {
-        "atestado": "🏥",
-        "justificativa": "📝",
-        "requerimento": "📋",
-        "outros": "📄"
-      }
-    },
-    "apiEndpoints": {
-      "login": "/api/auth/login",
-      "documents": "/api/student/documents",
-      "upload": "/api/student/documents/upload",
-      "status": "/api/student/documents/{id}/status"
+    "upload": {
+      "atestado": "Atestado Médico",
+      "justificativa": "Justificativa de Falta",
+      "requerimento": "Requerimento",
+      "outros": "Outros Documentos"
     }
+  },
+  "documentStatus": {
+    "ENVIADO": "enviado",
+    "EM_ANALISE": "em_analise",
+    "APROVADO": "aprovado",
+    "REJEITADO": "rejeitado"
+  },
+  "availableDocuments": [
+    {
+      "id": "1",
+      "title": "Histórico Escolar Completo",
+      "type": "pdf",
+      "category": "historico",
+      "url": "./assets/historico_escolar.docx",
+      "date": "2024-02-15",
+      "size": "2.3 MB",
+      "description": "Histórico escolar completo com todas as disciplinas cursadas.",
+      "pages": 4
+    },
+    {
+      "id": "2",
+      "title": "Boletim 1º Bimestre 2024",
+      "type": "pdf",
+      "category": "boletim",
+      "url": "./assets/boletim_escolar.png",
+      "date": "2024-04-10",
+      "size": "856 KB",
+      "description": "Boletim de notas do primeiro bimestre de 2024.",
+      "pages": 2
+    },
+    {
+      "id": "3",
+      "title": "Declaração de Matrícula",
+      "type": "html",
+      "category": "declaracao",
+      "url": "./assets/declaracao_matricula.pdf",
+      "date": "2024-05-20",
+      "size": "45 KB",
+      "description": "Declaração oficial de matrícula para o ano letivo de 2024."
+    },
+    {
+      "id": "5",
+      "title": "Comunicado - Reunião de Pais",
+      "type": "html",
+      "category": "comunicado",
+      "url": "./assets/comunicado.html",
+      "date": "2024-05-25",
+      "size": "32 KB",
+      "description": "Comunicado sobre reunião de pais e mestres."
+    }
+  ],
+  "uploadedDocuments": [
+    {
+      "id": "9759",
+      "title": "falta",
+      "category": "justificativa",
+      "status": "aprovado",
+      "file": {
+        "exif": null,
+        "base64": null,
+        "uri": "file:///Users/muriloalves/Library/Developer/CoreSimulator/Devices/45F9B886-7A41-47FF-BCCE-EF62F5740877/data/Containers/Data/Application/8D028228-A69A-4DAD-ACA5-9A3F83A86330/Library/Caches/ExponentExperienceData/@anonymous/proesc-app-82558f78-0bd4-4dd1-87ef-33aa877b92e5/ImagePicker/1E318162-B93D-4EFC-A2FF-2A3D37251324.jpg",
+        "height": 3024,
+        "assetId": "CC95F08C-88C3-4012-9D6D-64A413D254B3/L0/001",
+        "width": 4032,
+        "fileSize": 2023155,
+        "type": "image",
+        "fileName": "IMG_0006.jpg",
+        "duration": null,
+        "mimeType": "image/jpeg",
+        "pairedVideoAsset": null
+      },
+      "uploadDate": "2025-06-14"
+    }
+  ],
+  "statusConfig": {
+    "colors": {
+      "enviado": "#6c757d",
+      "em_analise": "#fd7e14",
+      "aprovado": "#198754",
+      "rejeitado": "#dc3545"
+    },
+    "labels": {
+      "enviado": "Enviado",
+      "em_analise": "Em Análise",
+      "aprovado": "Aprovado",
+      "rejeitado": "Rejeitado"
+    },
+    "icons": {
+      "atestado": "🏥",
+      "justificativa": "📝",
+      "requerimento": "📋",
+      "outros": "📄"
+    }
+  },
+  "apiEndpoints": {
+    "login": "/api/auth/login",
+    "documents": "/api/student/documents",
+    "upload": "/api/student/documents/upload",
+    "status": "/api/student/documents/{id}/status"
   }
